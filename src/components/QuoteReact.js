@@ -56,7 +56,7 @@ class QuoteReact extends Component {
           <div className="buttons">
             <a
               className="button" id="tweet-quote"
-              href='javascript:void(0);' // Evita que la página se recargue al hacer clic
+              // href='javascript:void(0);' // Evita que la página se recargue al hacer clic
               onClick={this.tweetQuote}
             >
                <i class="fa fa-twitter"></i>
