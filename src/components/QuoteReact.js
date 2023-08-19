@@ -54,13 +54,19 @@ class QuoteReact extends Component {
             - <span id="author">{this.state.randomQuote.author}</span>
           </div>
           <div className="buttons">
-            <a
-              className="button" id="tweet-quote"
-              // href='javascript:void(0);' // Evita que la página se recargue al hacer clic
+            <button
+              id='tweet-quote'
               onClick={this.tweetQuote}
+              style={{
+                textDecoration: 'none',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                color: 'blue'
+              }}
             >
-               <i class="fa fa-twitter"></i>
-            </a>
+              Tweet
+            </button>
             <button className="button" id="new-quote" onClick={this.generateNewQuote}>New quote</button>
           </div>
         </div>
